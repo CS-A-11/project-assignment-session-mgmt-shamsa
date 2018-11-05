@@ -3,7 +3,7 @@ var apiOptions = {
   server: "http://localhost:3000"
 };
 if (process.env.NODE_ENV === "production") {
-  apiOptions.server = "https://loc8rdemo-2018.herokuapp.com";
+  apiOptions.server = "https://loc8r-session.herokuapp.com";
 }
 
 var mongoose = require("mongoose");
