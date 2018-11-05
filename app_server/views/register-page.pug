@@ -1,0 +1,25 @@
+extends layout
+block content
+  #banner.page-header
+    .row
+      .col-md-6.col-sm-12
+        h1= pageHeader.title
+  .row
+    .col-xs-12.col-md-6
+      form.form-horizontal(action="/register", method="post", role="form")
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="email") Email
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="email")
+       
+        .form-group
+          label.col-xs-10.col-sm-2.control-label(for="name") Name
+          .col-xs-12.col-sm-10
+            input#name.form-control(name="name")
+       
+        .form-group
+          label.col-sm-2.control-label(for="pass") Password
+          .col-sm-10
+            input#review.form-control(name="pass",)
+        button.btn.btn-default.pull-right Register
+    .col-xs-12.col-md-4
